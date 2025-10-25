@@ -1,0 +1,19 @@
+{% load static %}
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}Loja{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  </head>
+  <body>
+    <nav>
+      <a href="{% url 'clientes:lista' %}">Clientes</a> |
+      <a href="/admin/">Admin</a> |
+      <a href="/api/">API</a>
+    </nav>
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+  </body>
+</html>
