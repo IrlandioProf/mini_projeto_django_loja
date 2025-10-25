@@ -14,7 +14,7 @@ INSTALLED_APPS = [
     # Terceiros
     'rest_framework',
     # Apps do projeto
-    'apps.clientes',
+    'apps.colaboradores',
 ]
 
 MIDDLEWARE = [
